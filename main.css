@@ -226,15 +226,15 @@ textarea {
 
 
 div#outer {
-  width: 320px;
-  height: 568px;
-  position: relative;
+  position: static;
   margin: 0px 0px 0px 0px;
+  height:400px;
+  width:100%;
 }
 video {
-  width: 320px;
-  height: 568px;
   position:absolute;
+  width:100%;
+  height:100%;
   top: 0;
   left: 0;
   background: #222;
