@@ -235,6 +235,7 @@ div#overlay {
   top: -100px;
   left: calc(100% - 52px);
   z-index: 10;
+  mix-blend-mode: difference;
 }
 
 @media screen and (max-width: 650px) {
