@@ -226,14 +226,14 @@ textarea {
 
 
 div#outer {
-  width: 640px;
-  height: 1136px;
+  width: 320px;
+  height: 568px;
   position: relative;
   margin: 0px 0px 0px 0px;
 }
 video {
-  width: 640px;
-  height: 1136px;
+  width: 320px;
+  height: 568px;
   position:absolute;
   top: 0;
   left: 0;
