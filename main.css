@@ -232,8 +232,8 @@ video {
 div#overlay {
   position: relative;
   display: inline-block;
-  top: -100px;
-  left: calc(100% - 52px);
+  width: 100%;
+  top: -400px;
   z-index: 10;
   mix-blend-mode: difference;
 }
