@@ -232,7 +232,7 @@ video {
 overlay {
   position: relative;
   display: inline-block;
-  top: -40px;
+  top: -100px;
   left: calc(100% - 52px);
   z-index: 10;
 	
