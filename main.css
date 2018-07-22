@@ -226,14 +226,12 @@ textarea {
 
 video {
   background: #222;
-  margin: 0 0 20px 0;
   width: 100%;
 }
 div#overlay {
-  position: relative;
+  position:absolute;
   display: inline-block;
   width: 100%;
-  top: -400px;
   z-index: 10;
   mix-blend-mode: difference;
 }
