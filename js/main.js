@@ -28,7 +28,8 @@ filterSelect.onchange = function() {
 
 const constraints = {
   audio: false,
-  video: true
+  video: true,
+  facingMode: { exact: "environment" }
 };
 
 function handleSuccess(stream) {
