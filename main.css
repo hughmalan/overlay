@@ -230,7 +230,7 @@ video {
   width: 100%;
 }
 div#overlay {
-  position:absolute;
+  position:relative;
   width: 100%;
   z-index: 10;
   mix-blend-mode: difference;
