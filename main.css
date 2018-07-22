@@ -229,15 +229,12 @@ video {
   margin: 0 0 20px 0;
   width: 100%;
 }
-#overlay {
+div#overlay {
   position: relative;
   display: inline-block;
   top: -100px;
   left: calc(100% - 52px);
   z-index: 10;
-	
-  height: 20px;
-  padding: 10px 10px;
 }
 
 @media screen and (max-width: 650px) {
