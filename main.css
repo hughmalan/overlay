@@ -248,6 +248,7 @@ div#overlay {
   left: 0;
   z-index: 10;
   mix-blend-mode: difference;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 650px) {
