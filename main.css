@@ -223,27 +223,21 @@ textarea {
   font-family: 'Roboto', sans-serif;
 }
 
-#stack {
-  width: 100px;
-  height: 100px;
-  position: relative;
-}
-#video {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-	
+
+video {
   background: #222;
-}
-#overlay {
+  margin: 0 0 20px 0;
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+}
+overlay {
+  position: relative;
+  display: inline-block;
+  top: -40px;
+  left: calc(100% - 52px);
   z-index: 10;
+	
+  height: 20px;
+  padding: 10px 10px;
 }
 
 @media screen and (max-width: 650px) {
