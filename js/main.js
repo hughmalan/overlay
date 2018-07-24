@@ -41,21 +41,3 @@ function handleError(error) {
 }
 
 navigator.mediaDevices.getUserMedia(constraints).then(handleSuccess).catch(handleError);
-
-
-
-
-button.addEventListener('click', event => {
-  const constraints = {
-    video: true,
-    audio: false
-  };
-  navigator.mediaDevices
-    .getUserMedia(constraints)
-    .then(stream => {
-      video.srcObject = stream;
-    })
-    .catch(error => {
-      console.error(error);
-    });
-});
