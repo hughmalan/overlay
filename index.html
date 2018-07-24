@@ -56,11 +56,30 @@
             margin: 0 10px 25px 0;
             width: 110px;
         }
+        
+        
+		.outer {
+			position: relative;
+		}
+
+		.overlay_img { 
+			width: 100%;
+			height: auto;
+			opacity: 0.3;
+		}
+		        
+		.bottomleft {
+			position: absolute;
+			bottom: 8px;
+			left: 16px;
+			font-size: 18px;
+		}
     </style>
 
 </head>
 
 <body>
+<!--
 <div id="outer">
     <video playsinline autoplay></video>
     <div id="overlay">
@@ -70,12 +89,26 @@
     </div>
 </div>
 
+<img class="overlay_img" src="https://www.w3schools.com/css/img_5terre_wide.jpg" alt="Cinque Terre" width="1000" height="300">
+  
+-->
+
+
+<div class="outer">
+  <video playsinline autoplay></video>
+  <div class="bottomleft">Bottom Left</div>
+</div>
 
 <div id="container">
     <h1><a href="//webrtc.github.io/samples/" title="WebRTC samples homepage">WebRTC samples</a> <span>
-        19.Camera overlay </span>
+        20.Camera overlay </span>
     </h1>
 
+      <button id="button">Get camera</button>
+      <select id="select">
+        <option></option>
+      </select>
+      
     <label for="filter">Filter: </label>
     <select id="filter">
         <option value="none">None</option>
