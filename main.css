@@ -24,11 +24,6 @@ div#errorMsg p {
   color: #F00;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
 a {
 color: #6fa8dc;
 font-weight: 300;
@@ -76,8 +71,9 @@ max-width: 100%;
 
 body {
 font-family: 'Roboto', sans-serif;
+font-weight: 300;
 margin: 0;
-padding: 1em;
+padding: 0em;
 word-break: break-word;
 }
 
