@@ -96,7 +96,9 @@ button.addEventListener('click', event => {
 });
 
 setimagesrcbutton.addEventListener('click', event => {
-	document.getElementById("referenceImg").src="https://www.how-to-draw-funny-cartoons.com/images/butterfly-sketch-001.jpg";
+	document.getElementById("referenceImg").src = document.getElementById("editimgesrc").value;
+		//"https://www.how-to-draw-funny-cartoons.com/images/butterfly-sketch-001.jpg";
+	
 });
 
 navigator.mediaDevices.enumerateDevices().then(gotDevices);
