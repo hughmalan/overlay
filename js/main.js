@@ -15,6 +15,7 @@ const video = window.video = document.querySelector('video');
 const canvas = window.canvas = document.querySelector('canvas');
 const button = document.getElementById('button');
 const select = document.getElementById('select');
+const setimagesrcbutton = document.getElementById('setimagesrc');
 
 canvas.width = 480;
 canvas.height = 360;
@@ -92,6 +93,10 @@ button.addEventListener('click', event => {
     .catch(error => {
       console.error(error);
     });
+});
+
+setimagesrcbutton.addEventListener('click', event => {
+	document.getElementById("referenceImg").src="https://www.how-to-draw-funny-cartoons.com/images/butterfly-sketch-001.jpg";
 });
 
 navigator.mediaDevices.enumerateDevices().then(gotDevices);
