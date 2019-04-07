@@ -74,15 +74,17 @@ button.addEventListener('click', event => {
 setimagesrcbutton.addEventListener('click', event => {
 	document.getElementById("referenceImg").src = document.getElementById("editimgesrc").value;
 		//"https://www.how-to-draw-funny-cartoons.com/images/butterfly-sketch-001.jpg";
-	
+});
+
 setimageopacityabutton.addEventListener('click', event => {
 	const overlay=document.getElementById("referenceImg");
 	overlay.style.opacity = (overlay.style.opacity>0.5) ? 0.1 : 0.9;
-});terfly-sketch-001.jpg";
+});
 	
 setimageopacitybbutton.addEventListener('click', event => {
 	const overlay=document.getElementById("referenceImg");
 	overlay.style.opacity = (overlay.style.opacity>0.5) ? 0.33 : 0.66;
 });
+
 
 navigator.mediaDevices.enumerateDevices().then(gotDevices);
