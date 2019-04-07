@@ -8,41 +8,17 @@
 
 'use strict';
 
-//const filterSelect = document.querySelector('select#filter');
-
 // Put variables in global scope to make them available to the browser console.
 const video = window.video = document.querySelector('video');
 const canvas = window.canvas = document.querySelector('canvas');
 const button = document.getElementById('button');
 const select = document.getElementById('select');
 const setimagesrcbutton = document.getElementById('setimagesrc');
+const setimageopacityabutton = document.getElementById('setimageopacity_a');
+const setimageopacitybbutton = document.getElementById('setimageopacity_b');
 
 canvas.width = 480;
 canvas.height = 360;
-
-/*
-filterSelect.onchange = function() {
-  video.className = filterSelect.value;
-};
-
-	const constraints = {
-	  audio: false,
-	  video: true
-	};
-
-	function handleSuccess(stream) {
-	  window.stream = stream; // make stream available to browser console
-	  video.srcObject = stream;
-	}
-
-	function handleError(error) {
-	  console.log('navigator.getUserMedia error: ', error);
-	}
-
-	navigator.mediaDevices.getUserMedia(constraints).then(handleSuccess).catch(handleError);
-*/
-
-
 
 let currentStream;
 
@@ -99,6 +75,14 @@ setimagesrcbutton.addEventListener('click', event => {
 	document.getElementById("referenceImg").src = document.getElementById("editimgesrc").value;
 		//"https://www.how-to-draw-funny-cartoons.com/images/butterfly-sketch-001.jpg";
 	
+setimageopacityabutton.addEventListener('click', event => {
+	const overlay=document.getElementById("referenceImg");
+	overlay.style.opacity = (overlay.style.opacity>0.5) ? 0.1 : 0.9;
+});terfly-sketch-001.jpg";
+	
+setimageopacitybbutton.addEventListener('click', event => {
+	const overlay=document.getElementById("referenceImg");
+	overlay.style.opacity = (overlay.style.opacity>0.5) ? 0.33 : 0.66;
 });
 
 navigator.mediaDevices.enumerateDevices().then(gotDevices);
