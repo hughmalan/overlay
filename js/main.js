@@ -14,6 +14,7 @@ const canvas = window.canvas = document.querySelector('canvas');
 const button = document.getElementById('button');
 const select = document.getElementById('select');
 const setimagesrcbutton = document.getElementById('setimagesrc');
+const clearimagesrctextbutton = document.getElementById('clearimagesrctext');
 const setimageopacityabutton = document.getElementById('setimageopacity_a');
 const setimageopacitybbutton = document.getElementById('setimageopacity_b');
 
@@ -74,6 +75,10 @@ button.addEventListener('click', event => {
 setimagesrcbutton.addEventListener('click', event => {
 	document.getElementById("referenceImg").src = document.getElementById("editimgesrc").value;
 		//"https://www.how-to-draw-funny-cartoons.com/images/butterfly-sketch-001.jpg";
+});
+
+clearimagesrctextbutton.addEventListener('click', event => {
+	document.getElementById("editimgesrc").value = "";
 });
 
 setimageopacityabutton.addEventListener('click', event => {
